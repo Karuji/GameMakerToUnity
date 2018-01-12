@@ -25,15 +25,8 @@ namespace GM2Unity
         protected static List<ImportAsset> targetPaths = new List<ImportAsset>();
         protected static XmlNodeList sounds, sprites, backgrounds, objects, rooms;
         protected static double startTime;
-        protected List<ImportAsset> importAssets;
 
-        #region monofunctions
-
-        void Start()
-        {
-            Import();
-            importAssets = targetPaths;
-        }
+        #region menu functions
 
         [MenuItem("Assets/Import Game Maker Project %m")]
         public static void Import()
